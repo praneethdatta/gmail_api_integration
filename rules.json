@@ -1,0 +1,71 @@
+{
+    "rules": [
+        {
+            "predicate": "all",
+            "conditions": [
+                {
+                    "field": "from",
+                    "predicate": "contains",
+                    "value": "avinash_s@happyfox.hire.trakstar.com"
+                },
+                {
+                    "field": "subject",
+                    "predicate": "contains",
+                    "value": "assignment"
+                }
+            ],
+            "action": {
+                "move": "STARRED"
+            }
+        },
+        {
+            "predicate": "all",
+            "conditions": [
+                {
+                    "field": "received_at",
+                    "predicate": "less than",
+                    "value": "2024-03-15T12:05:00Z"
+                }
+            ],
+            "action": {
+                "mark_as": "unread"
+            }
+        },
+        {
+            "predicate": "any",
+            "conditions": [
+                {
+                    "field": "subject",
+                    "predicate": "equals",
+                    "value": "PhonePe"
+                },
+                {
+                    "field": "from",
+                    "predicate": "does not contain",
+                    "value": "praneeth1995datta@gmail.com"
+                },
+                {
+                    "field": "received_at",
+                    "predicate": "less than",
+                    "value": "2024-04-15T12:05:00Z"
+                }
+            ],
+            "action": {
+                "move": "IMPORTANT"
+            }
+        },
+        {
+            "predicate": "any",
+            "conditions": [
+                {
+                    "field": "message",
+                    "predicate": "contains",
+                    "value": "urgent"
+                }
+            ],
+            "action": {
+                "mark_as": "unread"
+            }
+        }
+    ]
+}
