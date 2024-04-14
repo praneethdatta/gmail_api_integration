@@ -4,13 +4,13 @@ Steps to install -
 1. Clone the repository: 
 ```
 bash
-git clone https://github.com/your-username/gmail-api-email-rule-processor.git
+git clone https://github.com/your-username/gmail_api_integration.git
 ```
 
 2. Navigate to the project directory
 ```
 bash
-cd gmail-api-email-rule-processor
+cd gmail_api_integration
 ```
 
 3. Install the required packages
