@@ -2,19 +2,23 @@ Standalone Python script that integrates with Gmail API and performs some rule b
 
 Steps to install - 
 1. Clone the repository: 
-```bash
-    git clone https://github.com/your-username/gmail-api-email-rule-processor.git
-    ```
+```
+bash
+git clone https://github.com/your-username/gmail-api-email-rule-processor.git
+```
 
 2. Navigate to the project directory
-```bash
-    cd gmail-api-email-rule-processor
-    ```
+```
+bash
+cd gmail-api-email-rule-processor
+```
 
 3. Install the required packages
-```bash
-    pip install -r requirements.txt
-    ```
+```
+bash
+pip install -r requirements.txt
+```
+
 ## Configuration
 
 1. Replace the `credentials.json` file with your Gmail API credentials file.
@@ -25,5 +29,7 @@ Steps to install -
 
 Run the following command to fetch emails from Gmail, store them in DB and process the email with the rules:
 
-```bash
+```
+bash
 python main.py
+```
