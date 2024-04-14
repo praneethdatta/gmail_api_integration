@@ -7,7 +7,7 @@ def main():
     emails = gmail_api.fetch_emails()
 
     # Store emails into database
-    # database.store_emails(emails)
+    database.store_emails(emails)
 
     # Process emails based on rules
     rules.process_emails('rules.json', emails)
