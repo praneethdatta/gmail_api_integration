@@ -1,6 +1,7 @@
 import gmail_api
 import database
 import rules
+import config
 
 def main():
     # Fetch emails
@@ -10,7 +11,7 @@ def main():
     database.store_emails(emails)
 
     # Process emails based on rules
-    rules.process_emails('rules.json', emails)
+    rules.process_emails(config.RULES_FILE, emails)
 
 if __name__ == "__main__":
     main()
